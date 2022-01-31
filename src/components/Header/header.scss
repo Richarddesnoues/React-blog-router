@@ -1,0 +1,22 @@
+@use 'src/styles/vars';
+
+.header {
+  text-align: center;
+  padding: vars.$gutter;
+  border-bottom: 1px solid vars.$alt-color;
+
+  &__nav{
+
+    &__link {
+      margin: 0 1rem;
+      cursor: pointer;
+      color: vars.$dark-color;
+  
+      &:hover, &--active {
+        color: vars.$primary-color;
+      }
+    }
+
+  }
+  
+}

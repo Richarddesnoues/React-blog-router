@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+
+.single {
+  width: 100%;
+  padding: vars.$gutter;  
+
+  &__title {
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    font-size: 1.3em;
+    color: vars.$title-color;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  &__category {
+    background-color: vars.$primary-color;
+    color: vars.$light-color;
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__content {
+    margin-top: 0.5rem;
+    font-weight: 300;
+    color: vars.$post-text-color;
+
+    strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+  }
+}
